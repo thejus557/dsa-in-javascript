@@ -7,8 +7,8 @@
  * @returns the sorted array.
  */
 function selectionSort(arr) {
-  // The outer loop iterates over the array from the first element (index 0) to the second-to-last element (index arr.length - 2).
-  for (let i = 0; i < arr.length - 1; i++) {
+  // The outer loop iterates over the array from the first element (index 0) to the last element.
+  for (let i = 0; i < arr.length; i++) {
     // We assume the current index (i) has the minimum value.
     let minIndex = i;
 
