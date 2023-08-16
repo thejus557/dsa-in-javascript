@@ -7,10 +7,10 @@
  * @returns the sorted array.
  */
 function bubbleSort(arr) {
-  // The outer loop iterates over the array from the first element (index 0) to the second-to-last element (index arr.length - 2).
+  // The outer loop iterates over the array from the first element (index 0) to the last element.
   for (let i = 0; i < arr.length - 1; i++) {
-    // The inner loop iterates over the array from the first element (index 0) to the last element (index arr.length - 1).
-    for (let j = 0; j < arr.length; j++) {
+    // The inner loop iterates over the array from the first element (index 0) to the last element minus sorted array length i.e i.
+    for (let j = 0; j < arr.length - 1 - i; j++) {
       // Check if the current element (arr[j]) is greater than the next element (arr[j + 1]).
       if (arr[j] > arr[j + 1]) {
         // If the current element is greater than the next element, swap them using a temporary variable "temp."
